@@ -100,30 +100,29 @@
         </div>
 
         <div id="overlay">
-            <form action="get">
+            <form action="">
                 <h1>LINE ITEM</h1>
+                <p>Amount entered in number format no commas</p>
 
-                <legend>Contact Details</legend>
 
                 <label for="name">Line Item:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
               
                 <label for="number">Amount:</label>
-                <input type="number" id="number" name="number">
+                <input type="number" id="number" name="number" required>
               
                 <div>
                     <input type="radio" id="asset" name="type" value="asset">
-                    <label for="louie">ASSET</label>
+                    <label for="type">ASSET</label>
 
                   </div>
                   <div>
-                    <input type="radio" id="liability" name="type" value="liability">
-                    <label for="louie">LIABILITY</label>
+                    <input type="radio" id="liability" name="type" value="liability" required>
+                    <label for="type">LIABILITY</label>
 
                   </div>
                   <div>
-                    <input type="submit" id="submit" name="submit" value="submit">
-                    <label for="submit"></label>
+                    <button id = "submit">SUBMIT</button>
 
                   </div>
             </form>

@@ -63,3 +63,14 @@
     cursor: pointer; /* Add a pointer on hover */
   }
 
+  .assets{
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .liabilities{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
