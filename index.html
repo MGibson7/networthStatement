@@ -24,7 +24,7 @@
                 <h3 id = "currentAge">Current Age Range:</h3>
                 <div class = "agerange">
                     <div>
-                        <input type="radio" id="huey" name="drone" value="huey"
+                        <input type="radio" id="huey" name="drone" value="20"
                             checked>
                         <label for="huey">20-25</label>
                   </div>
@@ -82,7 +82,7 @@
 
         </div>
 
-        <div class = "addItem">
+        <div id = "addItem">
             <button>ADD ITEM</button>
 
         </div>
@@ -99,11 +99,34 @@
 
         </div>
 
-        
+        <div id="overlay">
+            <form action="get">
+                <h1>LINE ITEM</h1>
+
+                <legend>Contact Details</legend>
+
+                <label for="name">Line Item:</label>
+                <input type="text" id="name" name="name">
+              
+                <label for="number">Amount:</label>
+                <input type="number" id="number" name="number">
+              
+                <div>
+                    <input type="radio" id="asset" name="type" value="asset">
+                    <label for="louie">ASSET</label>
+
+                  </div>
+                  <div>
+                    <input type="radio" id="liability" name="type" value="liability">
+                    <label for="louie">LIABILITY</label>
+
+                  </div>
+            </form>
+        </div> 
 
 
 
     </div>
-    
+    <script type = "text/javascript" src = "main.js"></script>
 </body>
 </html>
