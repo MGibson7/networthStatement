@@ -34,15 +34,17 @@ body{
 }
 
 #addItem{
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 #addItem button{
-    margin: 15px;
+    margin-top: 15px;
     background-color: black;
     color: var(--main-color);
     border: 1px solid green;
     padding: 15px;
     cursor:pointer;
+    grid-column-start: 2;
 }
 
 .assetsLiabilities{
