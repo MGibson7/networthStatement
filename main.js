@@ -47,6 +47,11 @@ form.addEventListener('submit', event =>{
             
             worth.innerText = formatMoney(total);
 
+            let assetDisplay = document.getElementById("assets")
+            let existing = assetDisplay.innerHTML
+            assetDisplay.innerHTML = `${existing} <div><h3>$</h3><h4>${asset.names}</h4 <h4>${asset.number}</h4></div>`
+
+
 
         }
         else{
@@ -56,6 +61,10 @@ form.addEventListener('submit', event =>{
             console.log(liabAmount)
             total = assetAmount - liabAmount;
             worth.innerText = formatMoney(total);
+
+            let liabDisplay = document.getElementById("liabilities")
+            let existing = liabDisplay.innerHTML
+            liabDisplay.innerHTML = `${existing} <div><h3>X</h3><h4>${liability.names}</h4 <h4>${liability.number}</h4></div>`
         }
         document.getElementById("overlay").style.display = "none";
 
