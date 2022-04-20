@@ -56,7 +56,7 @@
     display: none; /* Hidden by default */
     width: 30%; /* Full width (cover the whole page) */
     height: 50%; /* Full height (cover the whole page) */
-    top: 50vh;
+    top: 20vh;
     left: 50vw;
     display: grid;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
