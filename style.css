@@ -1,0 +1,24 @@
+:root{
+    background-color: #166d3b;
+    background-image: linear-gradient(147deg, #166d3b 20%, #24af08d7 74%);
+    --main-color: white;
+
+}
+
+.container{
+    display: grid;
+}
+
+.Title{
+    text-align: center;
+    color: var(--main-color);
+}
+
+.overviewBar{
+    color: var(--main-color);
+    text-align: center;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
