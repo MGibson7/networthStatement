@@ -23,7 +23,7 @@ body{
     text-align: center;
     border: 2px solid white;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
 }
 
@@ -47,6 +47,13 @@ body{
     grid-column-start: 2;
 }
 
+button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
 .assetsLiabilities{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -63,6 +70,18 @@ body{
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    color: white;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    text-align: center;
+  }
+
+  #overlay2 {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    top: 0vh;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
