@@ -58,7 +58,11 @@ form.addEventListener('submit', event =>{
 
             let assetDisplay = document.getElementById("assets")
             let existing = assetDisplay.innerHTML
-            assetDisplay.innerHTML = `${existing} <div><h3>$</h3><h4>${asset.names}</h4 <h4>${asset.number}</h4></div>`
+            let idNum = Math.floor(Math.random()*100000) + Math.floor(Math.random()*100000)
+            let id = "assetName" + String(idNum)
+            assetDisplay.innerHTML = `${existing} <div><h3>$</h3><h4 id = "${id}" ></h4 <h4 id = "assetNumber">${asset.number}</h4></div>`
+            let assetName = document.getElementById(id)
+            assetName.innerText = `${asset.names}`
 
 
 
@@ -74,7 +78,11 @@ form.addEventListener('submit', event =>{
 
             let liabDisplay = document.getElementById("liabilities")
             let existing = liabDisplay.innerHTML
-            liabDisplay.innerHTML = `${existing} <div><h3>X</h3><h4>${liability.names}</h4 <h4>${liability.number}</h4></div>`
+            let idNum = Math.floor(Math.random()*100000) + Math.floor(Math.random()*100000)
+            let id = "liabName" + String(idNum)
+            liabDisplay.innerHTML = `${existing} <div><h3>$</h3><h4 id = "${id}" ></h4 <h4 id = "assetNumber">${liability.number}</h4></div>`
+            let liabName = document.getElementById(id)
+            liabName.innerText = `${liability.names}`
         }
         
         let percent = document.getElementById("percent")
